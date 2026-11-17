@@ -238,7 +238,6 @@ void dispatchCommand(const char *input) {
   cmd.trim();
   cmd.toUpperCase();
   unsigned value;
-  if (cmd.startsWith("BAUD=")) { Serial.println("Baud control is available in V4"); return; }
   if (cmd.startsWith("BAUD=") && numberInRange(cmd.c_str()+5, 9600, 115200, value)) {
     sendBaudRequest(value);
     return;
