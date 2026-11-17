@@ -175,12 +175,6 @@ class Analyzer(QMainWindow):
         self.build_inspector()
         self.build_controls()
 
-        # Staged edition: underlying protocol stays compatible across releases.
-        save.hide()
-        save_json.hide()
-        replay.hide()
-        self.link_rate.setEnabled(False)
-
         self.setStyleSheet('''
         QMainWindow,QWidget {background:#0b1220;color:#e2e8f0;font-size:12px}
         QLabel#heading {font-size:22px;font-weight:750;color:#7dd3fc;padding:5px 0}
