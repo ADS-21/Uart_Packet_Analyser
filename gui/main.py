@@ -180,9 +180,6 @@ class Analyzer(QMainWindow):
         save_json.hide()
         replay.hide()
         self.tabs.removeTab(2)
-        self.tabs.removeTab(0)
-        for label in self.metrics.values():
-            label.parentWidget().hide()
 
         self.setStyleSheet('''
         QMainWindow,QWidget {background:#0b1220;color:#e2e8f0;font-size:12px}
